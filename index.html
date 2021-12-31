@@ -52,10 +52,22 @@
     }, {
       link: 'https://t.me/+02kQVOJDD6YxNTg1',
       name: 'dhiep68'
+    }, {
+      link: 'https://t.me/+bj3Yt8w0ZxgzOGJl',
+      name: 'Lucaslim3r3nce'
+    }, {
+      link: 'https://t.me/+ChcpFp-mmTQzMmI1',
+      name: 'nam161020'
+    }, {
+      link: 'https://t.me/+cYRnD23IaKw0YjI1',
+      name: 'Clitus13'
+    }, {
+      link: 'https://t.me/+5ucpk_V9w7k3NTA1',
+      name: 'thành Võ'
     }]
     function getInvite() {
       var userName = document.getElementById("userName").value;
-      const link = links.find(o => o.name.includes(userName));
+      const link = links.find(o => o.name.toLowerCase().includes(userName.toLowerCase()));
       if (userName) {
         if (link) {
           document.getElementById("link").innerHTML = link.name + ': ' + link.link;
