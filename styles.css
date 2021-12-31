@@ -1,0 +1,29 @@
+body {
+  padding-top: 50px;  /* Move body of page below navbar. */
+}
+
+.page-content {
+  padding: 10px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.input-group {
+	margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+.input-group input {
+	margin-right: 16px;
+	border-radius: 3px;
+}
+#link {
+	margin: 16px 0;
+    color: #037bfe;
+}

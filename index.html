@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bros Ventures Fund</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!--  Load site-specific customizations after bootstrap. -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <!-- Responsive navbar -->
+  
+  
+  <div class="page-content">
+    <h1>Hello, Welcome to Bros Ventures Fund</h1>
+    <h3>Homepage: <a href="https://brosventures.com/" target="_blank">BrosVentures.com</a></h3>
+    <p>Google Form Register: <a href="https://forms.gle/1A2dfvUq2Wv54Uh66" target="_blank">Form Register</a></p>
+    <p>This is page for check your invite link<p> 
+    <div class="content">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">@</span>
+        </div>
+        <input type="text" id="userName" class="form-control" placeholder="Telegram Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <button type="button" class="btn btn-success" onclick="getInvite()">Get link invite</button>
+      <p id="link"></p>
+    </div>
+  </div>
+
+  <script>
+    var links = [{
+      link: 'https://t.me/+-yNJRREA14JiZjA1',
+      name: 'ooPrincesanh'
+    }, {
+      link: 'https://t.me/+iNJYkJ0eMkE5MjA1',
+      name: 'sofa2493'
+    }, {
+      link: 'https://t.me/+fCeZ-asuRPQzMjhl',
+      name: 'ngtrantien'
+    }, {
+      link: 'https://t.me/+GRbygDGvC91lODJl',
+      name: 'ruby666_4d'
+    }, {
+      link: 'https://t.me/+02kQVOJDD6YxNTg1',
+      name: 'dhiep68'
+    }]
+    function getInvite() {
+      var userName = document.getElementById("userName").value;
+      const link = links.find(o => o.name.includes(userName));
+      if (link) {
+        document.getElementById("link").innerHTML = link.name + ': ' + link.link;
+      }
+    }
+  </script>
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
