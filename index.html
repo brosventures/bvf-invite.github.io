@@ -56,10 +56,12 @@
     function getInvite() {
       var userName = document.getElementById("userName").value;
       const link = links.find(o => o.name.includes(userName));
-      if (link) {
-        document.getElementById("link").innerHTML = link.name + ': ' + link.link;
-      } else {
-        document.getElementById("link").innerHTML = 'You are not register yet! Please checkout this form: https://forms.gle/1A2dfvUq2Wv54Uh66';
+      if (userName) {
+        if (link) {
+          document.getElementById("link").innerHTML = link.name + ': ' + link.link;
+        } else {
+          document.getElementById("link").innerHTML = 'You are not register yet! Please checkout this form: https://forms.gle/1A2dfvUq2Wv54Uh66';
+        }
       }
     }
   </script>
